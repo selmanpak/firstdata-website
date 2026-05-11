@@ -253,115 +253,61 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative hidden min-h-[330px] lg:block">
-              <div className="absolute inset-0 rounded-[3rem] bg-[#00B583]/10 blur-3xl" />
-              <div className="absolute right-0 top-1/2 w-[410px] -translate-y-1/2 overflow-hidden rounded-[2.4rem] border border-white/10 bg-black/60 shadow-2xl shadow-[#00B583]/10">
-                <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.035] px-5 py-4">
-                  <div>
-                    <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
-                      RWA Market Monitor
-                    </div>
-                    <div className="mt-1 text-sm font-semibold text-white/70">
-                      Use case pipeline
-                    </div>
-                  </div>
-                  <div className="rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#00B583]">
-                    Live
-                  </div>
-                </div>
+            <div className="relative hidden min-h-[300px] lg:block">
+              <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
+              <div className="absolute right-0 top-1/2 w-[390px] -translate-y-1/2 overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-black/45 p-7 shadow-2xl shadow-[#00B583]/10">
+                <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,transparent_35%,rgba(0,181,131,0.13)_48%,transparent_61%,transparent_100%)] animate-pulse" />
 
-                <div className="grid grid-cols-3 border-b border-white/10 text-center">
-                  <div className="border-r border-white/10 px-4 py-4">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                      Primary
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
+                      Use Case Map
                     </div>
-                    <div className="mt-2 text-xl font-extrabold text-white">
-                      RE
+                    <div className="h-2 w-2 rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.8)]" />
+                  </div>
+
+                  <div className="mt-8 rounded-[2.25rem] border border-[#00B583]/35 bg-[#00B583]/10 p-7">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#00B583]">
+                      Primary Market
                     </div>
-                    <div className="mt-1 text-xs font-semibold text-[#00B583]">
+                    <div className="mt-4 text-4xl font-extrabold tracking-[-0.06em] text-white">
                       Real Estate
                     </div>
-                  </div>
-                  <div className="border-r border-white/10 px-4 py-4">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                      Expansion
-                    </div>
-                    <div className="mt-2 text-xl font-extrabold text-white">
-                      DEBT
-                    </div>
-                    <div className="mt-1 text-xs font-semibold text-white/45">
-                      Structured
-                    </div>
-                  </div>
-                  <div className="px-4 py-4">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                      Expansion
-                    </div>
-                    <div className="mt-2 text-xl font-extrabold text-white">
-                      INFRA
-                    </div>
-                    <div className="mt-1 text-xs font-semibold text-white/45">
-                      Long-term
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4 p-5">
-                  <div>
-                    <div className="mb-2 flex items-center justify-between text-xs">
-                      <span className="font-bold uppercase tracking-[0.14em] text-white/45">
-                        Readiness index
-                      </span>
-                      <span className="font-bold text-[#00B583]">High</span>
-                    </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
-                      <div className="h-full w-[82%] rounded-full bg-[#00B583]" />
+                    <div className="mt-5 h-2 overflow-hidden rounded-full bg-white/10">
+                      <div className="h-full w-[78%] rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.5)]" />
                     </div>
                   </div>
 
-                  <div>
-                    <div className="mb-2 flex items-center justify-between text-xs">
-                      <span className="font-bold uppercase tracking-[0.14em] text-white/45">
-                        Compliance fit
-                      </span>
-                      <span className="font-bold text-[#00B583]">Strong</span>
-                    </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
-                      <div className="h-full w-[76%] rounded-full bg-[#00B583]/75" />
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="mb-2 flex items-center justify-between text-xs">
-                      <span className="font-bold uppercase tracking-[0.14em] text-white/45">
-                        Lifecycle visibility
-                      </span>
-                      <span className="font-bold text-[#00B583]">Core</span>
-                    </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
-                      <div className="h-full w-[88%] rounded-full bg-[#00B583]/55" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="border-t border-white/10 bg-white/[0.025] px-5 py-4">
-                  <div className="grid grid-cols-[1fr_auto] items-end gap-5">
-                    <div>
+                  <div className="mt-5 grid grid-cols-2 gap-4">
+                    <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
                       <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                        Launch thesis
+                        Next
                       </div>
-                      <div className="mt-2 text-sm font-semibold leading-6 text-white/70">
-                        Start with real estate, expand into rule-based asset programs.
+                      <div className="mt-3 text-lg font-extrabold text-white">
+                        Debt
                       </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-extrabold tracking-[-0.04em] text-white">
-                        01
-                      </div>
-                      <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                        Phase
+                      <div className="mt-4 h-1.5 rounded-full bg-white/10">
+                        <div className="h-full w-[54%] rounded-full bg-[#00B583]/55" />
                       </div>
                     </div>
+
+                    <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                        Next
+                      </div>
+                      <div className="mt-3 text-lg font-extrabold text-white">
+                        Infrastructure
+                      </div>
+                      <div className="mt-4 h-1.5 rounded-full bg-white/10">
+                        <div className="h-full w-[48%] rounded-full bg-[#00B583]/45" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-black/35 px-5 py-4">
+                    <span className="text-sm font-semibold text-white/65">Launch</span>
+                    <span className="text-lg font-extrabold tracking-[0.24em] text-[#00B583]/55">›››</span>
+                    <span className="text-sm font-semibold text-white/65">Scale</span>
                   </div>
                 </div>
               </div>
