@@ -253,12 +253,14 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative hidden min-h-[300px] lg:block">
+            <div className="relative hidden min-h-[270px] lg:block">
               <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
-              <div className="absolute right-0 top-1/2 w-[390px] -translate-y-1/2 overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-black/45 p-7 shadow-2xl shadow-[#00B583]/10">
-                <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,transparent_35%,rgba(0,181,131,0.13)_48%,transparent_61%,transparent_100%)] animate-pulse" />
+              <div className="absolute right-0 top-1/2 h-[245px] w-[400px] -translate-y-1/2 overflow-hidden rounded-[2.75rem] border border-[#00B583]/20 bg-black/45 p-6 shadow-2xl shadow-[#00B583]/10">
+                <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,transparent_36%,rgba(0,181,131,0.16)_49%,transparent_62%,transparent_100%)] animate-pulse" />
+                <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#00B583]/10 blur-2xl" />
+                <div className="absolute -bottom-14 left-10 h-36 w-36 rounded-full bg-[#00B583]/8 blur-2xl" />
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex h-full flex-col justify-between">
                   <div className="flex items-center justify-between">
                     <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
                       Use Case Map
@@ -266,48 +268,34 @@ export default function Home() {
                     <div className="h-2 w-2 rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.8)]" />
                   </div>
 
-                  <div className="mt-8 rounded-[2.25rem] border border-[#00B583]/35 bg-[#00B583]/10 p-7">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#00B583]">
+                  <div>
+                    <div className="inline-flex rounded-full border border-[#00B583]/25 bg-[#00B583]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
                       Primary Market
                     </div>
-                    <div className="mt-4 text-4xl font-extrabold tracking-[-0.06em] text-white">
+                    <h3 className="mt-4 text-4xl font-extrabold tracking-[-0.06em] text-white">
                       Real Estate
-                    </div>
+                    </h3>
                     <div className="mt-5 h-2 overflow-hidden rounded-full bg-white/10">
                       <div className="h-full w-[78%] rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.5)]" />
                     </div>
                   </div>
 
-                  <div className="mt-5 grid grid-cols-2 gap-4">
-                    <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
-                      <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                  <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+                    <div className="rounded-[1.35rem] border border-white/10 bg-[#00291D]/45 px-4 py-3">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#00B583]">
                         Next
                       </div>
-                      <div className="mt-3 text-lg font-extrabold text-white">
-                        Debt
-                      </div>
-                      <div className="mt-4 h-1.5 rounded-full bg-white/10">
-                        <div className="h-full w-[54%] rounded-full bg-[#00B583]/55" />
-                      </div>
+                      <div className="mt-1 text-sm font-extrabold text-white">Debt</div>
                     </div>
-
-                    <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
-                      <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                    <div className="text-lg font-extrabold tracking-[0.22em] text-[#00B583]/55">
+                      ›››
+                    </div>
+                    <div className="rounded-[1.35rem] border border-white/10 bg-[#00291D]/45 px-4 py-3">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#00B583]">
                         Next
                       </div>
-                      <div className="mt-3 text-lg font-extrabold text-white">
-                        Infrastructure
-                      </div>
-                      <div className="mt-4 h-1.5 rounded-full bg-white/10">
-                        <div className="h-full w-[48%] rounded-full bg-[#00B583]/45" />
-                      </div>
+                      <div className="mt-1 text-sm font-extrabold text-white">Infrastructure</div>
                     </div>
-                  </div>
-
-                  <div className="mt-5 flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-black/35 px-5 py-4">
-                    <span className="text-sm font-semibold text-white/65">Launch</span>
-                    <span className="text-lg font-extrabold tracking-[0.24em] text-[#00B583]/55">›››</span>
-                    <span className="text-sm font-semibold text-white/65">Scale</span>
                   </div>
                 </div>
               </div>
