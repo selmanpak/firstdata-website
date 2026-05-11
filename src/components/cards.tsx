@@ -54,7 +54,7 @@ export function FlowRailStep({
   highlighted?: boolean;
 }) {
   return (
-    <div className="group relative">
+    <div className="group relative last:[&_.flow-arrow]:hidden">
       <div className="mb-5 flex items-center gap-4 lg:flex-col lg:items-start">
         <div
           className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border text-sm font-extrabold tracking-[0.12em] transition ${
@@ -65,9 +65,14 @@ export function FlowRailStep({
         >
           {number}
         </div>
-
-        <div className="hidden h-px flex-1 bg-gradient-to-r from-[#00B583]/45 to-transparent lg:block" />
       </div>
+
+      <div className="flow-arrow pointer-events-none absolute left-[4.25rem] top-7 hidden items-center text-[#00B583]/75 lg:flex">
+        <span className="h-px w-10 bg-gradient-to-r from-[#00B583]/70 to-[#00B583]/10" />
+        <span className="-ml-1 text-2xl leading-none">›</span>
+      </div>
+
+      <div className="flow-arrow pointer-events-none absolute left-7 top-16 h-8 w-px bg-gradient-to-b from-[#00B583]/45 to-transparent lg:hidden" />
 
       <div
         className={`min-h-[220px] rounded-[2rem] border p-6 transition group-hover:-translate-y-1 ${
