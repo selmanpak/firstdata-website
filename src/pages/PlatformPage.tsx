@@ -1,0 +1,177 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { primaryButtonClass } from "../config";
+import {
+  LifecycleStage,
+  PlatformCapability,
+  TrustBlock,
+} from "../components/cards";
+
+export default function PlatformPage() {
+  return (
+    <main>
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="max-w-4xl">
+          <div className="mb-7 inline-flex rounded-full border border-[#00B583]/40 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#00B583]">
+            FirstData Platform
+          </div>
+
+          <h1 className="text-5xl font-extrabold leading-[0.98] tracking-[-0.055em] text-white md:text-7xl">
+            End-to-end infrastructure for tokenized real-world assets.
+          </h1>
+
+          <p className="mt-7 max-w-2xl text-base leading-8 text-white/62 md:text-lg">
+            The FirstData platform supports the full tokenization lifecycle —
+            from asset onboarding and structuring to issuance, custody-aware
+            governance, distribution, and regulator-ready reporting.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-[#00291D]/25">
+        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+              Platform Lifecycle
+            </div>
+
+            <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+              A controlled path from asset intake to reporting.
+            </h2>
+
+            <p className="mt-6 text-base leading-8 text-white/58">
+              Each step adds structure, governance, and transparency before the
+              asset moves through the tokenization lifecycle.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-6 lg:grid-cols-3">
+            <LifecycleStage
+              number="01"
+              label="Prepare"
+              title="Asset Onboarding"
+              text="Capture asset identity, issuer data, documents, and eligibility requirements."
+            />
+            <LifecycleStage
+              number="02"
+              label="Structure"
+              title="Legal & Economic Rules"
+              text="Define compliance, disclosure, redemption, pricing, and economic logic."
+            />
+            <LifecycleStage
+              number="03"
+              label="Tokenize"
+              title="Token Configuration"
+              text="Configure token supply, permissions, smart contract controls, and issuance logic."
+              highlighted
+            />
+          </div>
+
+          <div className="relative my-10 hidden items-center justify-center lg:flex">
+            <div className="h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-[#00B583]/50 to-transparent" />
+            <div className="absolute rounded-full border border-[#00B583]/40 bg-black px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+              governed lifecycle
+            </div>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <LifecycleStage
+              number="04"
+              label="Govern"
+              title="Custody Logic"
+              text="Connect asset, SPV, wallet, custody model, approvals, and token lifecycle governance."
+            />
+            <LifecycleStage
+              number="05"
+              label="Distribute"
+              title="Controlled Access"
+              text="Enable controlled access for eligible participants and approved channels."
+            />
+            <LifecycleStage
+              number="06"
+              label="Report"
+              title="Lifecycle Visibility"
+              text="Provide dashboards, audit trails, lifecycle data, and compliance visibility."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+              Capabilities
+            </div>
+
+            <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+              Built for institutional control across the asset lifecycle.
+            </h2>
+
+            <p className="mt-6 max-w-xl text-base leading-8 text-white/58">
+              FirstData is not just a token issuance layer. It is designed
+              around the operational, compliance, custody, and reporting needs
+              of regulated real-world asset programs.
+            </p>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2">
+            <PlatformCapability
+              title="Asset & issuer management"
+              text="Centralize asset information, issuer references, supporting documents, and lifecycle data."
+            />
+            <PlatformCapability
+              title="KYC & eligibility rules"
+              text="Apply investor eligibility, jurisdictional restrictions, document requirements, and access rules."
+            />
+            <PlatformCapability
+              title="Role-based governance"
+              text="Manage operational roles, permissions, signers, approvals, and segregation of duties."
+            />
+            <PlatformCapability
+              title="Audit-ready reporting"
+              text="Track issuance, supply, holders, transactions, redemptions, performance, and compliance activity."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.025]">
+        <div className="mx-auto grid max-w-7xl gap-6 px-5 py-20 lg:grid-cols-3 lg:px-8">
+          <TrustBlock
+            title="Regulatory-first deployment"
+            text="Designed for controlled environments, sandbox-style validation, auditability, and supervisory visibility."
+          />
+          <TrustBlock
+            title="Custody-aware architecture"
+            text="Supports models where real-world assets, SPVs, wallets, and tokens remain traceable and governed."
+          />
+          <TrustBlock
+            title="Vendor-agnostic infrastructure"
+            text="Built to integrate with different custody, blockchain, cloud, and distribution partners as needed."
+          />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/50 p-10 md:p-14">
+          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <div className="mb-5 text-xs font-bold uppercase tracking-[0.22em] text-[#00B583]">
+                Explore the platform
+              </div>
+              <h2 className="max-w-3xl text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+                See how the platform can support a regulated tokenization
+                program.
+              </h2>
+            </div>
+
+            <Link to="/contact" className={`${primaryButtonClass} px-8 py-4`}>
+              Book a Demo <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
