@@ -289,37 +289,51 @@ function Home() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            <FlowStep
-              number="01"
-              title="Onboard"
-              text="Capture asset, issuer, documentation, and eligibility data."
-            />
-            <FlowStep
-              number="02"
-              title="Structure"
-              text="Define legal, compliance, economic, and disclosure rules."
-            />
-            <FlowStep
-              number="03"
-              title="Tokenize"
-              text="Configure supply, smart contract controls, and issuance logic."
-            />
-            <FlowStep
-              number="04"
-              title="Govern"
-              text="Apply roles, approvals, custody, wallets, and audit trails."
-            />
-            <FlowStep
-              number="05"
-              title="Distribute"
-              text="Enable controlled investor access and token lifecycle operations."
-            />
-            <FlowStep
-              number="06"
-              title="Report"
-              text="Provide transparent dashboards for performance and compliance."
-            />
+          <div className="mt-16">
+            <div className="relative overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/35 p-5 md:p-8">
+              <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#00B583]/10 blur-3xl" />
+              <div className="absolute left-8 right-8 top-[5.25rem] hidden h-px bg-gradient-to-r from-transparent via-[#00B583]/50 to-transparent lg:block" />
+
+              <div className="relative z-10 grid gap-5 lg:grid-cols-6">
+                <FlowRailStep
+                  number="01"
+                  label="Intake"
+                  title="Onboard"
+                  text="Capture asset, issuer, documentation, and eligibility data."
+                />
+                <FlowRailStep
+                  number="02"
+                  label="Rules"
+                  title="Structure"
+                  text="Define legal, compliance, economic, and disclosure rules."
+                />
+                <FlowRailStep
+                  number="03"
+                  label="Core"
+                  title="Tokenize"
+                  text="Configure supply, smart contract controls, and issuance logic."
+                  highlighted
+                />
+                <FlowRailStep
+                  number="04"
+                  label="Control"
+                  title="Govern"
+                  text="Apply roles, approvals, custody, wallets, and audit trails."
+                />
+                <FlowRailStep
+                  number="05"
+                  label="Access"
+                  title="Distribute"
+                  text="Enable controlled investor access and lifecycle operations."
+                />
+                <FlowRailStep
+                  number="06"
+                  label="Insight"
+                  title="Report"
+                  text="Provide dashboards, audit trails, lifecycle data, and compliance visibility."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -469,22 +483,52 @@ function ProblemCard({
   );
 }
 
-function FlowStep({
+function FlowRailStep({
   number,
+  label,
   title,
   text,
+  highlighted = false,
 }: {
   number: string;
+  label: string;
   title: string;
   text: string;
+  highlighted?: boolean;
 }) {
   return (
-    <div className="relative rounded-[1.75rem] border border-white/10 bg-black/35 p-6">
-      <div className="mb-7 text-xs font-bold tracking-[0.2em] text-[#00B583]">
-        {number}
+    <div className="group relative">
+      <div className="mb-5 flex items-center gap-4 lg:flex-col lg:items-start">
+        <div
+          className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border text-sm font-extrabold tracking-[0.12em] transition ${
+            highlighted
+              ? "border-[#00B583] bg-[#00B583] text-black shadow-2xl shadow-[#00B583]/25"
+              : "border-[#00B583]/35 bg-black text-[#00B583] group-hover:border-[#00B583]"
+          }`}
+        >
+          {number}
+        </div>
+
+        <div className="hidden h-px flex-1 bg-gradient-to-r from-[#00B583]/45 to-transparent lg:block" />
       </div>
-      <h3 className="text-xl font-bold text-white">{title}</h3>
-      <p className="mt-4 text-sm leading-7 text-white/52">{text}</p>
+
+      <div
+        className={`min-h-[220px] rounded-[2rem] border p-6 transition group-hover:-translate-y-1 ${
+          highlighted
+            ? "border-[#00B583]/55 bg-[#00B583]/10"
+            : "border-white/10 bg-black/35 group-hover:border-[#00B583]/35"
+        }`}
+      >
+        <div className="mb-5 inline-flex rounded-full border border-[#00B583]/25 bg-[#00B583]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+          {label}
+        </div>
+
+        <h3 className="text-2xl font-extrabold tracking-[-0.03em] text-white">
+          {title}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-white/55">{text}</p>
+      </div>
     </div>
   );
 }
