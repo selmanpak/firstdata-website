@@ -130,61 +130,19 @@ export default function Home() {
 
       <section className="border-y border-white/10 bg-white/[0.025]">
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.95fr_0.65fr] lg:items-center">
-            <div className="max-w-3xl text-center lg:text-left">
-              <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
-                Platform Flow
-              </div>
-
-              <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
-                From asset onboarding to lifecycle reporting.
-              </h2>
-
-              <p className="mt-6 text-base leading-8 text-white/58">
-                FirstData is designed to support the complete tokenization journey
-                with institutional-grade controls at every stage.
-              </p>
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+              Platform Flow
             </div>
 
-            <div className="relative hidden min-h-[280px] lg:block">
-              <div className="absolute inset-0 rounded-[3rem] bg-[#00B583]/10 blur-3xl" />
-              <div className="absolute right-0 top-1/2 h-[240px] w-[360px] -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/35 p-6 shadow-2xl shadow-[#00B583]/10">
-                <div className="relative h-full">
-                  <div className="absolute left-0 top-2 rounded-3xl border border-white/10 bg-black/55 p-5">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                      Asset data
-                    </div>
-                    <div className="mt-5 h-2 w-28 rounded-full bg-white/15" />
-                    <div className="mt-3 h-2 w-20 rounded-full bg-white/10" />
-                    <div className="mt-3 h-2 w-24 rounded-full bg-[#00B583]/35" />
-                  </div>
+            <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+              From asset onboarding to lifecycle reporting.
+            </h2>
 
-                  <div className="absolute left-[8.75rem] top-[5.85rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
-                    ›››
-                  </div>
-
-                  <div className="absolute left-[11.5rem] top-[3.25rem] flex h-24 w-24 items-center justify-center rounded-[2rem] border border-[#00B583]/50 bg-[#00B583] text-lg font-extrabold text-black shadow-2xl shadow-[#00B583]/20">
-                    Token
-                  </div>
-
-                  <div className="absolute right-0 bottom-2 rounded-3xl border border-white/10 bg-black/55 p-5">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                      Reporting
-                    </div>
-                    <div className="mt-5 grid grid-cols-4 gap-2">
-                      <div className="h-10 rounded-xl bg-[#00B583]/45" />
-                      <div className="h-16 rounded-xl bg-[#00B583]/25" />
-                      <div className="h-8 rounded-xl bg-[#00B583]/55" />
-                      <div className="h-12 rounded-xl bg-[#00B583]/30" />
-                    </div>
-                  </div>
-
-                  <div className="absolute bottom-[4.7rem] right-[8.8rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
-                    ›››
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className="mt-6 text-base leading-8 text-white/58">
+              FirstData is designed to support the complete tokenization journey
+              with institutional-grade controls at every stage.
+            </p>
           </div>
 
           <div className="mt-16">
@@ -278,20 +236,66 @@ export default function Home() {
 
       <section className="border-y border-white/10 bg-[#00291D]/25">
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
-              Use Cases
+          <div className="grid gap-12 lg:grid-cols-[0.95fr_0.7fr] lg:items-center">
+            <div className="max-w-3xl">
+              <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+                Use Cases
+              </div>
+
+              <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+                Real estate first. Broader real-world assets by design.
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/58">
+                The platform is positioned for real-world asset tokenization
+                programs where transparency, compliance, custody, and lifecycle
+                control matter.
+              </p>
             </div>
 
-            <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
-              Real estate first. Broader real-world assets by design.
-            </h2>
+            <div className="relative hidden min-h-[300px] lg:block">
+              <div className="absolute inset-0 rounded-[3rem] bg-[#00B583]/10 blur-3xl" />
+              <div className="absolute right-0 top-1/2 h-[270px] w-[380px] -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-black/35 p-6 shadow-2xl shadow-[#00B583]/10">
+                <div className="relative h-full">
+                  <div className="absolute left-0 top-0 h-32 w-40 rounded-[2rem] border border-white/10 bg-[#00291D]/55 p-5">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                      Real estate
+                    </div>
+                    <div className="mt-5 grid grid-cols-3 gap-2">
+                      <div className="h-12 rounded-xl bg-[#00B583]/20" />
+                      <div className="h-16 rounded-xl bg-[#00B583]/35" />
+                      <div className="h-10 rounded-xl bg-[#00B583]/15" />
+                    </div>
+                  </div>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-white/58">
-              The platform is positioned for real-world asset tokenization
-              programs where transparency, compliance, custody, and lifecycle
-              control matter.
-            </p>
+                  <div className="absolute left-[9rem] top-[4.8rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
+                    ›››
+                  </div>
+
+                  <div className="absolute left-[11.5rem] top-[2.75rem] flex h-28 w-28 items-center justify-center rounded-[2rem] border border-[#00B583]/50 bg-[#00B583] text-base font-extrabold text-black shadow-2xl shadow-[#00B583]/20">
+                    RWA
+                  </div>
+
+                  <div className="absolute right-0 bottom-0 w-44 rounded-[2rem] border border-white/10 bg-[#00291D]/55 p-5">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                      Investors
+                    </div>
+                    <div className="mt-5 space-y-3">
+                      <div className="h-2 w-full rounded-full bg-white/15" />
+                      <div className="h-2 w-4/5 rounded-full bg-[#00B583]/35" />
+                      <div className="h-2 w-2/3 rounded-full bg-white/10" />
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-[4.8rem] right-[9.25rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
+                    ›››
+                  </div>
+
+                  <div className="absolute right-6 top-4 h-16 w-16 rounded-full border border-[#00B583]/25" />
+                  <div className="absolute bottom-8 left-8 h-10 w-10 rounded-2xl border border-white/10 bg-white/[0.03]" />
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="mt-14 grid gap-5 lg:grid-cols-3">
