@@ -253,54 +253,79 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative hidden min-h-[260px] lg:block">
-              <div className="absolute inset-0 rounded-full bg-[#00B583]/10 blur-3xl" />
+            <div className="relative hidden min-h-[330px] lg:block">
+              <div className="absolute inset-0 rounded-full bg-[#00B583]/15 blur-3xl" />
+              <div className="absolute right-0 top-1/2 h-[320px] w-[400px] -translate-y-1/2 overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[radial-gradient(circle_at_50%_20%,rgba(0,181,131,0.16),rgba(0,41,29,0.45)_42%,rgba(0,0,0,0.75)_100%)] p-6 shadow-2xl shadow-[#00B583]/10">
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:24px_24px] opacity-20" />
+                <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/15" />
+                <div className="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/25" />
 
-              <div className="absolute right-0 top-1/2 w-[360px] -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-black/35 p-6 shadow-2xl shadow-[#00B583]/10">
-                <div className="rounded-[2rem] border border-[#00B583]/30 bg-[#00B583]/10 p-6">
-                  <div className="inline-flex rounded-full border border-[#00B583]/30 bg-black/30 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                    Primary Use Case
+                <div className="relative h-full">
+                  <div className="absolute left-0 top-2 rounded-[1.65rem] border border-white/10 bg-black/45 px-4 py-3 backdrop-blur-sm">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                      Flagship
+                    </div>
+                    <div className="mt-2 text-base font-extrabold tracking-[-0.03em] text-white">
+                      Real Estate
+                    </div>
                   </div>
 
-                  <h3 className="mt-5 text-3xl font-extrabold tracking-[-0.04em] text-white">
-                    Real Estate
-                  </h3>
-
-                  <p className="mt-3 text-sm leading-7 text-white/60">
-                    Controlled access, asset documentation, eligibility, and lifecycle reporting.
-                  </p>
-                </div>
-
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                  <div className="absolute bottom-5 left-3 rounded-[1.45rem] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-sm">
                     <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
                       Expansion
                     </div>
-                    <div className="mt-3 text-lg font-extrabold tracking-[-0.03em] text-white">
+                    <div className="mt-2 text-sm font-extrabold tracking-[-0.03em] text-white">
                       Debt
                     </div>
                   </div>
 
-                  <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                  <div className="absolute right-2 top-8 rounded-[1.45rem] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-sm">
                     <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
                       Expansion
                     </div>
-                    <div className="mt-3 text-lg font-extrabold tracking-[-0.03em] text-white">
+                    <div className="mt-2 text-sm font-extrabold tracking-[-0.03em] text-white">
                       Infrastructure
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-4 flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-[#00291D]/45 px-5 py-4">
-                  <span className="text-sm font-semibold text-white/75">
-                    Launch
-                  </span>
-                  <span className="text-lg font-extrabold tracking-[0.24em] text-[#00B583]/55">
+                  <div className="absolute bottom-4 right-0 rounded-[1.65rem] border border-[#00B583]/20 bg-[#00291D]/50 px-5 py-4 backdrop-blur-sm">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                      Output
+                    </div>
+                    <div className="mt-2 text-base font-extrabold tracking-[-0.03em] text-white">
+                      Investor Access
+                    </div>
+                  </div>
+
+                  <div className="absolute left-1/2 top-1/2 flex h-36 w-36 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2.2rem] border border-[#00B583]/45 bg-black/60 shadow-[0_0_55px_rgba(0,181,131,0.20)] backdrop-blur-md">
+                    <div className="absolute inset-3 rounded-[1.8rem] border border-[#00B583]/20" />
+                    <div className="absolute inset-6 rounded-[1.4rem] border border-[#00B583]/15" />
+                    <div className="text-center">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
+                        Tokenization
+                      </div>
+                      <div className="mt-2 text-2xl font-extrabold tracking-[-0.05em] text-white">
+                        RWA Hub
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute left-[6.8rem] top-[4.1rem] text-lg font-extrabold tracking-[0.26em] text-[#00B583]/45">
                     ›››
-                  </span>
-                  <span className="text-sm font-semibold text-white/75">
-                    Expand
-                  </span>
+                  </div>
+                  <div className="absolute left-[8.1rem] bottom-[4.75rem] text-lg font-extrabold tracking-[0.26em] text-[#00B583]/45">
+                    ›››
+                  </div>
+                  <div className="absolute right-[7.5rem] top-[5.5rem] text-lg font-extrabold tracking-[0.26em] text-[#00B583]/45">
+                    ‹‹‹
+                  </div>
+                  <div className="absolute right-[7.5rem] bottom-[4rem] text-lg font-extrabold tracking-[0.26em] text-[#00B583]/45">
+                    ›››
+                  </div>
+
+                  <div className="absolute left-[8.9rem] top-[8.45rem] h-2 w-2 rounded-full bg-[#00B583]/70 shadow-[0_0_18px_rgba(0,181,131,0.7)]" />
+                  <div className="absolute right-[8.55rem] top-[9.25rem] h-2 w-2 rounded-full bg-[#00B583]/50 shadow-[0_0_18px_rgba(0,181,131,0.5)]" />
+                  <div className="absolute left-[15.9rem] bottom-[6.4rem] h-2 w-2 rounded-full bg-[#00B583]/60 shadow-[0_0_18px_rgba(0,181,131,0.6)]" />
                 </div>
               </div>
             </div>
