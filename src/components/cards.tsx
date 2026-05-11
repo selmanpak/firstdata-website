@@ -67,12 +67,11 @@ export function FlowRailStep({
         </div>
       </div>
 
-      <div className="flow-arrow pointer-events-none absolute left-[4.25rem] top-7 hidden items-center text-[#00B583]/75 lg:flex">
-        <span className="h-px w-10 bg-gradient-to-r from-[#00B583]/70 to-[#00B583]/10" />
-        <span className="-ml-1 text-2xl leading-none">›</span>
+      <div className="flow-arrow pointer-events-none absolute -right-5 top-6 z-20 hidden h-8 w-8 items-center justify-center rounded-full border border-[#00B583]/25 bg-black text-sm font-bold text-[#00B583]/80 shadow-lg shadow-black/40 lg:flex">
+        →
       </div>
 
-      <div className="flow-arrow pointer-events-none absolute left-7 top-16 h-8 w-px bg-gradient-to-b from-[#00B583]/45 to-transparent lg:hidden" />
+      <div className="flow-arrow pointer-events-none mx-0 mb-5 ml-7 mt-[-0.5rem] hidden h-8 w-px bg-gradient-to-b from-[#00B583]/45 to-transparent max-lg:block" />
 
       <div
         className={`min-h-[220px] rounded-[2rem] border p-6 transition group-hover:-translate-y-1 ${
