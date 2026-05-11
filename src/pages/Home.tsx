@@ -253,46 +253,54 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative hidden min-h-[300px] lg:block">
-              <div className="absolute inset-0 rounded-[3rem] bg-[#00B583]/10 blur-3xl" />
-              <div className="absolute right-0 top-1/2 h-[270px] w-[380px] -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-black/35 p-6 shadow-2xl shadow-[#00B583]/10">
-                <div className="relative h-full">
-                  <div className="absolute left-0 top-0 h-32 w-40 rounded-[2rem] border border-white/10 bg-[#00291D]/55 p-5">
+            <div className="relative hidden min-h-[260px] lg:block">
+              <div className="absolute inset-0 rounded-full bg-[#00B583]/10 blur-3xl" />
+
+              <div className="absolute right-0 top-1/2 w-[360px] -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-black/35 p-6 shadow-2xl shadow-[#00B583]/10">
+                <div className="rounded-[2rem] border border-[#00B583]/30 bg-[#00B583]/10 p-6">
+                  <div className="inline-flex rounded-full border border-[#00B583]/30 bg-black/30 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
+                    Primary Use Case
+                  </div>
+
+                  <h3 className="mt-5 text-3xl font-extrabold tracking-[-0.04em] text-white">
+                    Real Estate
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-white/60">
+                    Controlled access, asset documentation, eligibility, and lifecycle reporting.
+                  </p>
+                </div>
+
+                <div className="mt-4 grid grid-cols-2 gap-4">
+                  <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
                     <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                      Real estate
+                      Expansion
                     </div>
-                    <div className="mt-5 grid grid-cols-3 gap-2">
-                      <div className="h-12 rounded-xl bg-[#00B583]/20" />
-                      <div className="h-16 rounded-xl bg-[#00B583]/35" />
-                      <div className="h-10 rounded-xl bg-[#00B583]/15" />
+                    <div className="mt-3 text-lg font-extrabold tracking-[-0.03em] text-white">
+                      Debt
                     </div>
                   </div>
 
-                  <div className="absolute left-[9rem] top-[4.8rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
-                    ›››
-                  </div>
-
-                  <div className="absolute left-[11.5rem] top-[2.75rem] flex h-28 w-28 items-center justify-center rounded-[2rem] border border-[#00B583]/50 bg-[#00B583] text-base font-extrabold text-black shadow-2xl shadow-[#00B583]/20">
-                    RWA
-                  </div>
-
-                  <div className="absolute right-0 bottom-0 w-44 rounded-[2rem] border border-white/10 bg-[#00291D]/55 p-5">
+                  <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
                     <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
-                      Investors
+                      Expansion
                     </div>
-                    <div className="mt-5 space-y-3">
-                      <div className="h-2 w-full rounded-full bg-white/15" />
-                      <div className="h-2 w-4/5 rounded-full bg-[#00B583]/35" />
-                      <div className="h-2 w-2/3 rounded-full bg-white/10" />
+                    <div className="mt-3 text-lg font-extrabold tracking-[-0.03em] text-white">
+                      Infrastructure
                     </div>
                   </div>
+                </div>
 
-                  <div className="absolute bottom-[4.8rem] right-[9.25rem] text-2xl font-extrabold tracking-[0.18em] text-[#00B583]/45">
+                <div className="mt-4 flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-[#00291D]/45 px-5 py-4">
+                  <span className="text-sm font-semibold text-white/75">
+                    Launch
+                  </span>
+                  <span className="text-lg font-extrabold tracking-[0.24em] text-[#00B583]/55">
                     ›››
-                  </div>
-
-                  <div className="absolute right-6 top-4 h-16 w-16 rounded-full border border-[#00B583]/25" />
-                  <div className="absolute bottom-8 left-8 h-10 w-10 rounded-2xl border border-white/10 bg-white/[0.03]" />
+                  </span>
+                  <span className="text-sm font-semibold text-white/75">
+                    Expand
+                  </span>
                 </div>
               </div>
             </div>
