@@ -67,8 +67,8 @@ export function FlowRailStep({
         </div>
       </div>
 
-      <div className="flow-arrow pointer-events-none absolute -right-5 top-6 z-20 hidden h-8 w-8 items-center justify-center rounded-full border border-[#00B583]/25 bg-black text-sm font-bold text-[#00B583]/80 shadow-lg shadow-black/40 lg:flex">
-        →
+      <div className="flow-arrow pointer-events-none absolute left-[4.35rem] right-[-1.25rem] top-7 z-20 hidden items-center justify-center overflow-hidden text-[18px] font-extrabold tracking-[0.28em] text-[#00B583]/45 lg:flex">
+        <span className="translate-y-[-1px]">›››››</span>
       </div>
 
       <div className="flow-arrow pointer-events-none mx-0 mb-5 ml-7 mt-[-0.5rem] hidden h-8 w-px bg-gradient-to-b from-[#00B583]/45 to-transparent max-lg:block" />
