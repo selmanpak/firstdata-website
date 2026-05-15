@@ -63,6 +63,11 @@ div[class*="h-[245px]"][class*="w-[400px]"] > .relative.z-10::before {
   main > section:nth-of-type(6) > div > div.grid:first-child > div:nth-child(2) {
     order: 1;
   }
+
+  main > section:nth-of-type(6) div[class*="h-[245px]"][class*="w-[400px]"] {
+    left: 0;
+    right: auto;
+  }
 }
 
 ::-webkit-scrollbar {
