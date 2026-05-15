@@ -38,6 +38,19 @@ button {
   color: #000000;
 }
 
+.visual-status-dot::before,
+div[class*="h-[245px]"][class*="w-[400px]"] > .relative.z-10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: #00b583;
+  box-shadow: 0 0 18px rgba(0, 181, 131, 0.8);
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
