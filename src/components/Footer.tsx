@@ -25,10 +25,8 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="text-sm leading-6 text-white/45 lg:text-right">
-          <p>2239 Al Urubah Rd.</p>
-          <p>Al Olaya Dist. 12214 Riyadh, KSA</p>
-          <p className="mt-3">+966 11 211 1556</p>
+        <div className="text-sm text-white/45 lg:text-right">
+          <p>Riyadh · Kingdom of Saudi Arabia</p>
           <p className="mt-3">Empowering Solutions Through Data&amp;AI</p>
         </div>
       </div>
