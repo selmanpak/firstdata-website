@@ -3,14 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  base: "/firstdata-website/",
   plugins: [react(), tailwindcss()],
-  server: {
-    host: "0.0.0.0",
-    port: 5173,
-    strictPort: true,
-    allowedHosts: [
-      ".app.github.dev",
-      "fictional-succotash-q7wqqp9wjxg7f479q-5173.app.github.dev",
-    ],
-  },
 });
