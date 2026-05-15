@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -191,9 +192,9 @@ export default function PlatformPage() {
 
 function PlatformHeroVisual() {
   return (
-    <div className="relative hidden min-h-[430px] lg:block">
+    <div className="relative mx-auto min-h-[340px] w-full max-w-[420px] overflow-visible lg:min-h-[430px] lg:max-w-none">
       <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
-      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-5 shadow-2xl shadow-[#00B583]/10">
+      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 scale-[0.74] rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-5 shadow-2xl shadow-[#00B583]/10 sm:scale-[0.82] lg:scale-100">
         <div className="absolute inset-0 rounded-[3rem] bg-[radial-gradient(circle_at_50%_20%,rgba(0,181,131,0.18),transparent_42%)]" />
         <div className="absolute left-1/2 top-1/2 h-[220px] w-[220px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/20" />
         <div className="absolute left-1/2 top-1/2 h-[145px] w-[145px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/35 bg-black/55 shadow-[0_0_45px_rgba(0,181,131,0.18)]" />
@@ -245,7 +246,7 @@ function PlatformNode({
   text,
 }: {
   className: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   title: string;
   text: string;
 }) {
