@@ -56,10 +56,10 @@ export function Header() {
           <motion.div
             className="fixed left-0 top-0 z-[99999] h-dvh w-screen bg-black px-5 lg:hidden"
             style={{ backgroundColor: "#000000" }}
-            initial={{ y: "-100%" }}
-            animate={{ y: 0 }}
-            exit={{ y: "-100%" }}
-            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
               <Logo />
