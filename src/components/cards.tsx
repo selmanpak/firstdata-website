@@ -176,10 +176,20 @@ export function PlatformCapability({ title, text }: { title: string; text: strin
   );
 }
 
-export function TrustBlock({ title, text }: { title: string; text: string }) {
+export function TrustBlock({
+  icon,
+  title,
+  text,
+}: {
+  icon?: React.ReactNode;
+  title: string;
+  text: string;
+}) {
   return (
     <div className="rounded-[2.25rem] border border-white/10 bg-black/35 p-7">
-      <ShieldCheck className="mb-6 text-[#00B583]" size={28} />
+      <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#00B583]/12 text-[#00B583]">
+        {icon ?? <ShieldCheck size={26} />}
+      </div>
       <h3 className="text-xl font-extrabold tracking-[-0.03em] text-white">
         {title}
       </h3>
