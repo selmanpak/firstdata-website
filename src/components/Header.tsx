@@ -56,76 +56,43 @@ export function Header() {
           <motion.div
             className="fixed left-0 top-0 z-[99999] h-dvh w-screen bg-black px-5 lg:hidden"
             style={{ backgroundColor: "#000000" }}
-            initial={{ opacity: 0, y: -18 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -18 }}
-            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-100%" }}
+            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
               <Logo />
 
-              <motion.button
+              <button
                 onClick={() => setOpen(false)}
                 className="rounded-full border border-white/15 bg-black p-2 text-white transition hover:border-[#00B583] hover:text-[#00B583]"
                 aria-label="Close menu"
-                initial={{ opacity: 0, rotate: -45, scale: 0.9 }}
-                animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                exit={{ opacity: 0, rotate: 45, scale: 0.9 }}
-                transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               >
                 <X size={22} />
-              </motion.button>
+              </button>
             </div>
 
-            <motion.nav
-              className="mx-auto mt-8 flex max-w-7xl flex-col gap-6"
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={{
-                open: {
-                  transition: { staggerChildren: 0.055, delayChildren: 0.08 },
-                },
-                closed: {
-                  transition: { staggerChildren: 0.03, staggerDirection: -1 },
-                },
-              }}
-            >
+            <nav className="mx-auto mt-8 flex max-w-7xl flex-col gap-6">
               {navItems.map((item) => (
-                <motion.div
+                <NavLink
                   key={item.path}
-                  variants={{
-                    open: { opacity: 1, x: 0 },
-                    closed: { opacity: 0, x: -18 },
-                  }}
-                  transition={{ duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
+                  to={item.path}
+                  onClick={() => setOpen(false)}
+                  className="block border-b border-white/10 pb-5 text-2xl font-semibold text-white transition hover:text-[#00B583]"
                 >
-                  <NavLink
-                    to={item.path}
-                    onClick={() => setOpen(false)}
-                    className="block border-b border-white/10 pb-5 text-2xl font-semibold text-white transition hover:text-[#00B583]"
-                  >
-                    {item.label}
-                  </NavLink>
-                </motion.div>
+                  {item.label}
+                </NavLink>
               ))}
 
-              <motion.div
-                variants={{
-                  open: { opacity: 1, y: 0 },
-                  closed: { opacity: 0, y: 16 },
-                }}
-                transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              <Link
+                to="/contact"
+                onClick={() => setOpen(false)}
+                className="mt-4 block rounded-full border border-transparent bg-[#00B583] px-6 py-4 text-center font-bold text-black transition hover:border-[#00B583] hover:bg-black hover:text-[#00B583]"
               >
-                <Link
-                  to="/contact"
-                  onClick={() => setOpen(false)}
-                  className="mt-4 block rounded-full border border-transparent bg-[#00B583] px-6 py-4 text-center font-bold text-black transition hover:border-[#00B583] hover:bg-black hover:text-[#00B583]"
-                >
-                  Book a Demo
-                </Link>
-              </motion.div>
-            </motion.nav>
+                Book a Demo
+              </Link>
+            </nav>
           </motion.div>
         )}
       </AnimatePresence>
