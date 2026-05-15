@@ -32,6 +32,7 @@ export default function ContactPage() {
                 value="2239 Al Urubah Rd. Al Olaya Dist. 12214 Riyadh, KSA"
               />
               <ContactInfo label="Phone" value="+966 11 211 1556" />
+              <ContactInfo label="Email" value="info@1stdata.ai" />
               <ContactInfo
                 label="Focus"
                 value="AI-integrated real-world asset tokenization"
