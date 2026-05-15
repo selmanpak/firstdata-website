@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Boxes, Landmark, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  Boxes,
+  DatabaseZap,
+  FileCheck2,
+  Landmark,
+  Network,
+  ShieldCheck,
+} from "lucide-react";
 import { primaryButtonClass } from "../config";
 import {
   LifecycleStage,
@@ -10,7 +18,7 @@ import {
 export default function PlatformPage() {
   return (
     <main>
-      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <div className="max-w-4xl">
           <div className="mb-7 inline-flex rounded-full border border-[#00B583]/40 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#00B583]">
             FirstData Platform
@@ -26,6 +34,8 @@ export default function PlatformPage() {
             governance, distribution, and regulator-ready reporting.
           </p>
         </div>
+
+        <PlatformHeroVisual />
       </section>
 
       <section className="border-y border-white/10 bg-[#00291D]/25">
@@ -176,5 +186,80 @@ export default function PlatformPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+function PlatformHeroVisual() {
+  return (
+    <div className="relative hidden min-h-[430px] lg:block">
+      <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
+      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-5 shadow-2xl shadow-[#00B583]/10">
+        <div className="absolute inset-0 rounded-[3rem] bg-[radial-gradient(circle_at_50%_20%,rgba(0,181,131,0.18),transparent_42%)]" />
+        <div className="absolute left-1/2 top-1/2 h-[220px] w-[220px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/20" />
+        <div className="absolute left-1/2 top-1/2 h-[145px] w-[145px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#00B583]/35 bg-black/55 shadow-[0_0_45px_rgba(0,181,131,0.18)]" />
+
+        <div className="absolute left-1/2 top-1/2 z-10 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-[#00B583]/45 bg-[#00B583]/10 text-[#00B583]">
+          <Network size={42} />
+        </div>
+
+        <PlatformNode
+          className="left-8 top-8"
+          icon={<DatabaseZap size={20} />}
+          title="Asset Data"
+          text="Intake"
+        />
+        <PlatformNode
+          className="right-8 top-8"
+          icon={<ShieldCheck size={20} />}
+          title="Controls"
+          text="Rules"
+        />
+        <PlatformNode
+          className="left-8 bottom-8"
+          icon={<Boxes size={20} />}
+          title="Custody"
+          text="Govern"
+        />
+        <PlatformNode
+          className="right-8 bottom-8"
+          icon={<FileCheck2 size={20} />}
+          title="Reporting"
+          text="Audit"
+        />
+
+        <div className="absolute left-[112px] top-[86px] h-px w-[82px] rotate-[24deg] bg-[#00B583]/35" />
+        <div className="absolute right-[112px] top-[86px] h-px w-[82px] -rotate-[24deg] bg-[#00B583]/35" />
+        <div className="absolute bottom-[86px] left-[112px] h-px w-[82px] -rotate-[24deg] bg-[#00B583]/35" />
+        <div className="absolute bottom-[86px] right-[112px] h-px w-[82px] rotate-[24deg] bg-[#00B583]/35" />
+
+        <div className="absolute right-7 top-1/2 h-2 w-2 -translate-y-1/2 rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.8)]" />
+      </div>
+    </div>
+  );
+}
+
+function PlatformNode({
+  className,
+  icon,
+  title,
+  text,
+}: {
+  className: string;
+  icon: React.ReactNode;
+  title: string;
+  text: string;
+}) {
+  return (
+    <div
+      className={`absolute z-20 w-[138px] rounded-[1.6rem] border border-white/10 bg-black/65 p-4 backdrop-blur-xl ${className}`}
+    >
+      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#00B583]/12 text-[#00B583]">
+        {icon}
+      </div>
+      <div className="text-sm font-extrabold text-white">{title}</div>
+      <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#00B583]">
+        {text}
+      </div>
+    </div>
   );
 }
