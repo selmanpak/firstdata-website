@@ -60,6 +60,31 @@ div[class*="h-[245px]"][class*="w-[400px]"] > .relative.z-10::before {
   box-shadow: 0 0 18px rgba(0, 181, 131, 0.8);
 }
 
+@media (max-width: 1023px) {
+  main > section:first-of-type > div.relative.hidden {
+    display: block;
+    min-height: 350px;
+    margin-top: 1rem;
+  }
+
+  main > section:first-of-type > div.relative.hidden > div[class*="h-[360px]"][class*="w-[420px]"] {
+    height: 360px;
+    width: 420px;
+    transform: translate(-50%, -50%) scale(0.78);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 420px) {
+  main > section:first-of-type > div.relative.hidden {
+    min-height: 320px;
+  }
+
+  main > section:first-of-type > div.relative.hidden > div[class*="h-[360px]"][class*="w-[420px]"] {
+    transform: translate(-50%, -50%) scale(0.68);
+  }
+}
+
 @media (min-width: 1024px) {
   main > section:nth-of-type(6) > div > div.grid:first-child {
     grid-template-columns: 0.7fr 0.95fr;
