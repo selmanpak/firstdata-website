@@ -1,10 +1,10 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Building2,
   FileText,
   KeyRound,
-  Landmark,
   LineChart,
 } from "lucide-react";
 import { primaryButtonClass } from "../config";
@@ -232,7 +232,7 @@ function EstateMetric({
   label,
   value,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
 }) {
