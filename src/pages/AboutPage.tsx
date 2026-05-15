@@ -69,9 +69,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-8 text-white/58">
-              FirstData’s website should express the same qualities as the brand:
-              intelligent, confident, collaborative, forward-thinking, and
-              grounded in trust.
+              FirstData is designed for organizations that need trusted digital
+              asset infrastructure, practical tokenization workflows, and a clear
+              path from real-world assets to regulated market participation.
             </p>
           </div>
 
