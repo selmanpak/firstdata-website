@@ -85,7 +85,7 @@ export default function PlatformPage() {
             </div>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mt-6 grid gap-6 lg:mt-0 lg:grid-cols-3">
             <LifecycleStage
               number="04"
               label="Govern"
