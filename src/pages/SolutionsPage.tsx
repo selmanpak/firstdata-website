@@ -77,7 +77,75 @@ export default function SolutionsPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
+              Institutional Value
+            </div>
+
+            <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
+              Tokenization turns asset programs into controlled digital market infrastructure.
+            </h2>
+
+            <p className="mt-6 max-w-xl text-base leading-8 text-white/58">
+              For institutions, tokenization is not only about issuing a token. It
+              creates a governed operating layer for access, compliance,
+              ownership records, settlement logic, and lifecycle visibility.
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-black/45 p-6 shadow-2xl shadow-[#00B583]/10">
+            <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,transparent_34%,rgba(0,181,131,0.12)_50%,transparent_66%,transparent_100%)] animate-pulse" />
+            <div className="absolute right-0 top-0 h-48 w-48 rounded-full bg-[#00B583]/10 blur-3xl" />
+
+            <div className="relative z-10 grid gap-4 md:grid-cols-2">
+              <div className="rounded-[2rem] border border-[#00B583]/30 bg-[#00B583]/10 p-6 md:col-span-2">
+                <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#00B583]">
+                  Institution Benefit
+                </div>
+                <div className="mt-4 text-3xl font-extrabold tracking-[-0.05em] text-white">
+                  More transparent, programmable, and scalable asset operations.
+                </div>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                <div className="text-2xl font-extrabold text-[#00B583]">01</div>
+                <h3 className="mt-3 text-lg font-extrabold text-white">Access</h3>
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  Open controlled participation models for qualified channels and investor segments.
+                </p>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                <div className="text-2xl font-extrabold text-[#00B583]">02</div>
+                <h3 className="mt-3 text-lg font-extrabold text-white">Efficiency</h3>
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  Reduce manual friction across onboarding, issuance, transfers, and reporting.
+                </p>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                <div className="text-2xl font-extrabold text-[#00B583]">03</div>
+                <h3 className="mt-3 text-lg font-extrabold text-white">Control</h3>
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  Embed eligibility, governance, approvals, and audit trails into the asset lifecycle.
+                </p>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-white/10 bg-[#00291D]/45 p-5">
+                <div className="text-2xl font-extrabold text-[#00B583]">04</div>
+                <h3 className="mt-3 text-lg font-extrabold text-white">Visibility</h3>
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  Give stakeholders clearer ownership, performance, compliance, and lifecycle data.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.025]">
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
               Engagement Model
@@ -120,7 +188,7 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 pb-24 lg:px-8">
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="relative overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/50 px-7 py-14 md:px-12 lg:px-16">
           <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-[#00B583]/15 blur-3xl" />
           <div className="relative z-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
