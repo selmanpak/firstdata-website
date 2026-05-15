@@ -52,10 +52,10 @@ export function Header() {
 
       {open && (
         <div
-          className="fixed left-0 top-0 z-[99999] h-dvh w-screen bg-black px-5 py-6 lg:hidden"
+          className="fixed left-0 top-0 z-[99999] h-dvh w-screen bg-black px-5 lg:hidden"
           style={{ backgroundColor: "#000000" }}
         >
-          <div className="flex items-center justify-between">
+          <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
             <Logo />
 
             <button
@@ -67,7 +67,7 @@ export function Header() {
             </button>
           </div>
 
-          <nav className="mt-12 flex flex-col gap-6">
+          <nav className="mx-auto mt-8 flex max-w-7xl flex-col gap-6">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
