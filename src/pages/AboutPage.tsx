@@ -108,9 +108,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 text-base leading-8 text-white/58">
-              FirstData combines the pioneering “First” mindset with data-driven
-              intelligence — creating a brand language built on leadership,
-              trust, adaptability, and innovation.
+              FirstData helps institutions move from complex real-world asset
+              structures to clearer, more transparent, and more efficient digital
+              asset operations.
             </p>
           </div>
         </div>
