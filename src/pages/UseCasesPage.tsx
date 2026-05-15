@@ -181,9 +181,9 @@ export default function UseCasesPage() {
 
 function RealEstateHeroVisual() {
   return (
-    <div className="relative hidden min-h-[430px] lg:block">
+    <div className="relative mx-auto min-h-[340px] w-full max-w-[420px] overflow-visible lg:min-h-[430px] lg:max-w-none">
       <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
-      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-6 shadow-2xl shadow-[#00B583]/10">
+      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 scale-[0.74] overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-6 shadow-2xl shadow-[#00B583]/10 sm:scale-[0.82] lg:scale-100">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(0,181,131,0.18),transparent_42%)]" />
         <div className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-[#00B583]/10 blur-2xl" />
         <div className="absolute -bottom-16 left-12 h-44 w-44 rounded-full bg-[#00B583]/8 blur-2xl" />
