@@ -60,53 +60,6 @@ div[class*="h-[245px]"][class*="w-[400px]"] > .relative.z-10::before {
   box-shadow: 0 0 18px rgba(0, 181, 131, 0.8);
 }
 
-@media (max-width: 1023px) {
-  main > section:first-of-type > div.relative.hidden {
-    display: block;
-    position: relative;
-    min-height: 360px;
-    margin: 4.5rem auto 0;
-    width: 100%;
-    max-width: 420px;
-    overflow: visible;
-  }
-
-  main > section:first-of-type > div.relative.hidden > div[class*="h-[360px]"][class*="w-[420px]"] {
-    left: 50% !important;
-    right: auto !important;
-    top: 50% !important;
-    height: 360px;
-    width: 420px;
-    transform: translate(-50%, -50%) scale(0.74) !important;
-    transform-origin: center;
-  }
-}
-
-@media (max-width: 420px) {
-  main > section:first-of-type > div.relative.hidden {
-    min-height: 340px;
-    margin-top: 5rem;
-    max-width: 100%;
-  }
-
-  main > section:first-of-type > div.relative.hidden > div[class*="h-[360px]"][class*="w-[420px]"] {
-    left: 50% !important;
-    right: auto !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) scale(0.62) !important;
-  }
-}
-
-@media (max-width: 360px) {
-  main > section:first-of-type > div.relative.hidden {
-    min-height: 315px;
-  }
-
-  main > section:first-of-type > div.relative.hidden > div[class*="h-[360px]"][class*="w-[420px]"] {
-    transform: translate(-50%, -50%) scale(0.56) !important;
-  }
-}
-
 @media (min-width: 1024px) {
   main > section:nth-of-type(6) > div > div.grid:first-child {
     grid-template-columns: 0.7fr 0.95fr;
