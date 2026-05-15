@@ -100,7 +100,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-6 inline-flex rounded-full border border-[#00B583]/30 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B583]">
-              Brand Promise
+              What We Deliver
             </div>
 
             <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] text-white md:text-5xl">
