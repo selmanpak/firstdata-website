@@ -1,5 +1,13 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Building2,
+  Landmark,
+  Network,
+  ShieldCheck,
+  UsersRound,
+} from "lucide-react";
 import { primaryButtonClass } from "../config";
 import {
   EngagementStep,
@@ -9,7 +17,7 @@ import {
 export default function SolutionsPage() {
   return (
     <main>
-      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <div className="max-w-4xl">
           <div className="mb-7 inline-flex rounded-full border border-[#00B583]/40 bg-[#00B583]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#00B583]">
             Solutions
@@ -26,6 +34,8 @@ export default function SolutionsPage() {
             controls, AI-enabled workflows, and regulated-market readiness.
           </p>
         </div>
+
+        <SolutionsHeroVisual />
       </section>
 
       <section className="border-y border-white/10 bg-[#00291D]/25">
@@ -208,5 +218,97 @@ export default function SolutionsPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+function SolutionsHeroVisual() {
+  return (
+    <div className="relative hidden min-h-[430px] lg:block">
+      <div className="absolute inset-0 rounded-full bg-[#00B583]/12 blur-3xl" />
+      <div className="absolute left-1/2 top-1/2 h-[360px] w-[420px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[3rem] border border-[#00B583]/20 bg-[#00291D]/25 p-6 shadow-2xl shadow-[#00B583]/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(0,181,131,0.18),transparent_42%)]" />
+        <div className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-[#00B583]/10 blur-2xl" />
+        <div className="absolute -bottom-16 left-12 h-44 w-44 rounded-full bg-[#00B583]/8 blur-2xl" />
+
+        <div className="relative z-10 flex h-full flex-col justify-between">
+          <div className="flex items-center justify-between">
+            <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
+              Solution Matrix
+            </div>
+            <div className="h-2 w-2 rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.8)]" />
+          </div>
+
+          <div className="relative mx-auto mt-2 h-[195px] w-[285px]">
+            <div className="absolute left-1/2 top-1/2 h-[120px] w-[120px] -translate-x-1/2 -translate-y-1/2 rounded-[2.25rem] border border-[#00B583]/45 bg-[#00B583]/10 text-[#00B583] shadow-[0_0_45px_rgba(0,181,131,0.14)]">
+              <div className="flex h-full w-full items-center justify-center">
+                <Network size={46} />
+              </div>
+            </div>
+
+            <SolutionNode
+              className="left-0 top-0"
+              icon={<Building2 size={18} />}
+              title="Issuers"
+            />
+            <SolutionNode
+              className="right-0 top-0"
+              icon={<Landmark size={18} />}
+              title="Institutions"
+            />
+            <SolutionNode
+              className="bottom-0 left-0"
+              icon={<ShieldCheck size={18} />}
+              title="Compliance"
+            />
+            <SolutionNode
+              className="bottom-0 right-0"
+              icon={<UsersRound size={18} />}
+              title="Partners"
+            />
+
+            <div className="absolute left-[72px] top-[53px] h-px w-[72px] rotate-[24deg] bg-[#00B583]/35" />
+            <div className="absolute right-[72px] top-[53px] h-px w-[72px] -rotate-[24deg] bg-[#00B583]/35" />
+            <div className="absolute bottom-[53px] left-[72px] h-px w-[72px] -rotate-[24deg] bg-[#00B583]/35" />
+            <div className="absolute bottom-[53px] right-[72px] h-px w-[72px] rotate-[24deg] bg-[#00B583]/35" />
+          </div>
+
+          <div className="grid grid-cols-3 gap-3">
+            <SolutionMetric label="Access" value="Governed" />
+            <SolutionMetric label="Rules" value="Embedded" />
+            <SolutionMetric label="Scale" value="Modular" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SolutionNode({
+  className,
+  icon,
+  title,
+}: {
+  className: string;
+  icon: ReactNode;
+  title: string;
+}) {
+  return (
+    <div
+      className={`absolute z-20 flex h-[70px] w-[112px] flex-col justify-center rounded-[1.4rem] border border-white/10 bg-black/65 px-4 backdrop-blur-xl ${className}`}
+    >
+      <div className="text-[#00B583]">{icon}</div>
+      <div className="mt-2 text-xs font-extrabold text-white">{title}</div>
+    </div>
+  );
+}
+
+function SolutionMetric({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-[1.35rem] border border-white/10 bg-black/55 px-4 py-3 text-center">
+      <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#00B583]">
+        {label}
+      </div>
+      <div className="mt-1 text-xs font-extrabold text-white">{value}</div>
+    </div>
   );
 }
