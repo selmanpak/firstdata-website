@@ -27,7 +27,11 @@ export default function ContactPage() {
             </p>
 
             <div className="mt-10 grid gap-4">
-              <ContactInfo label="Location" value="Riyadh · Kingdom of Saudi Arabia" />
+              <ContactInfo
+                label="Address"
+                value="2239 Al Urubah Rd. Al Olaya Dist. 12214 Riyadh, KSA"
+              />
+              <ContactInfo label="Phone" value="+966 11 211 1556" />
               <ContactInfo
                 label="Focus"
                 value="AI-integrated real-world asset tokenization"
