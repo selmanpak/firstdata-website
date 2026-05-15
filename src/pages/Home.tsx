@@ -261,13 +261,6 @@ export default function Home() {
                 <div className="absolute -bottom-14 left-10 h-36 w-36 rounded-full bg-[#00B583]/8 blur-2xl" />
 
                 <div className="relative z-10 flex h-full flex-col justify-between">
-                  <div className="flex items-center justify-between">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#00B583]">
-                      Use Case Map
-                    </div>
-                    <div className="h-2 w-2 rounded-full bg-[#00B583] shadow-[0_0_18px_rgba(0,181,131,0.8)]" />
-                  </div>
-
                   <div>
                     <div className="inline-flex rounded-full border border-[#00B583]/25 bg-[#00B583]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00B583]">
                       Primary Market
