@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Boxes, Landmark, ShieldCheck } from "lucide-react";
 import { primaryButtonClass } from "../config";
 import {
   LifecycleStage,
@@ -139,14 +139,17 @@ export default function PlatformPage() {
       <section className="border-y border-white/10 bg-white/[0.025]">
         <div className="mx-auto grid max-w-7xl gap-6 px-5 py-20 lg:grid-cols-3 lg:px-8">
           <TrustBlock
+            icon={<Landmark size={26} />}
             title="Regulatory-first deployment"
             text="Designed for controlled environments, sandbox-style validation, auditability, and supervisory visibility."
           />
           <TrustBlock
+            icon={<ShieldCheck size={26} />}
             title="Custody-aware architecture"
             text="Supports models where real-world assets, SPVs, wallets, and tokens remain traceable and governed."
           />
           <TrustBlock
+            icon={<Boxes size={26} />}
             title="Vendor-agnostic infrastructure"
             text="Built to integrate with different custody, blockchain, cloud, and distribution partners as needed."
           />
