@@ -51,6 +51,20 @@ div[class*="h-[245px]"][class*="w-[400px]"] > .relative.z-10::before {
   box-shadow: 0 0 18px rgba(0, 181, 131, 0.8);
 }
 
+@media (min-width: 1024px) {
+  main > section:nth-of-type(6) > div > div.grid:first-child {
+    grid-template-columns: 0.7fr 0.95fr;
+  }
+
+  main > section:nth-of-type(6) > div > div.grid:first-child > div:first-child {
+    order: 2;
+  }
+
+  main > section:nth-of-type(6) > div > div.grid:first-child > div:nth-child(2) {
+    order: 1;
+  }
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
