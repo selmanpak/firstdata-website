@@ -33,14 +33,6 @@ export default function ContactPage() {
               />
               <ContactInfo label="Phone" value="+966 11 211 1556" />
               <ContactInfo label="Email" value="info@1stdata.ai" />
-              <ContactInfo
-                label="Focus"
-                value="AI-integrated real-world asset tokenization"
-              />
-              <ContactInfo
-                label="Engagement"
-                value="Platform demos, partnerships, and strategic discussions"
-              />
             </div>
           </div>
 
