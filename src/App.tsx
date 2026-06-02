@@ -9,6 +9,7 @@ import SolutionsPage from "./pages/SolutionsPage";
 import UseCasesPage from "./pages/UseCasesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import "./hero-motion.css";
 
 export default function App() {
   const location = useLocation();
