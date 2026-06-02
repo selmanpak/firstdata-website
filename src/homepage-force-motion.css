@@ -1,0 +1,73 @@
+main section:first-child h1 span {
+  display: block;
+  opacity: 0;
+  animation-name: homepageLineIn;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+main section:first-child h1 span:nth-child(1) {
+  animation-delay: 250ms;
+}
+
+main section:first-child h1 span:nth-child(2) {
+  animation-delay: 600ms;
+}
+
+main section:first-child h1 span:nth-child(3) {
+  animation-delay: 950ms;
+}
+
+main section:first-child p:first-of-type {
+  opacity: 0;
+  animation: homepageFadeUp 850ms 1250ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+main section:first-child a:first-of-type {
+  animation: homepageButtonGlow 2600ms 1800ms ease-in-out infinite;
+}
+
+main section:first-child div[class*="mt-8"][class*="rounded"] {
+  animation: homepagePanelGlow 3200ms ease-in-out infinite;
+}
+
+@keyframes homepageLineIn {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes homepageFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes homepageButtonGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.25);
+  }
+}
+
+@keyframes homepagePanelGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(0, 181, 131, 0);
+  }
+  50% {
+    box-shadow: 0 0 36px rgba(0, 181, 131, 0.22);
+  }
+}
